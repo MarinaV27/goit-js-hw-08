@@ -56,7 +56,7 @@ const images = [
      description: 'Alpine Spring Meadows',
  },
  {
-    id:8,
+   
      preview:
      'https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255__340.jpg',
      original:
@@ -77,7 +77,6 @@ const images = [
     const img = document.querySelectorAll(".galleri-link")
     container.innerHTML = creatMarkup(images);
     container.addEventListener("click", handleModalOpen);
-
    
     function creatMarkup (arr){
       return arr.map(({preview, original, description}) => 
